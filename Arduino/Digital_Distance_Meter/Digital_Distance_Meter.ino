@@ -16,7 +16,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(TrigPin, HIGH);
   delayMicroseconds(10);
-  digitalWrite(9, LOW);
+  digitalWrite(TrigPin, LOW);
 
   int duration = pulseIn(EchoPin, HIGH);
   // 0.034 cm/us is the speed of sound and distance = speed * time

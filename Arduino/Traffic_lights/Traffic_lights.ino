@@ -25,33 +25,31 @@ class LED
     int _blueChannelPin;
 };
 
-// You can change this values accourding to you pin configuration
-// as long as you keep the order of parameters.
-LED redLight(2, 3, 4);
-LED greenLight(5, 6, 7);
-LED blueLight(5, 6, 7);
+LED redLight(10, 9, 8);
+LED yellowLight(7, 6, 5);
+LED greenLight(4, 3, 2);
 
 void setup() {
   // put your setup code here, to run once:
   redLight.Init();
+  yellowLight.Init();
   greenLight.Init();
-  blueLight.Init();
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  redLight.LightUp(255, 0 , 0);
+  redLight.LightUp(255, 0, 0);
+  yellowLight.LightUp(0, 0, 0);
   greenLight.LightUp(0, 0, 0);
-  blueLight.LightUp(0, 0, 0);
-  delay(5000);
+  delay(2000);
 
-  redLight.LightUp(0, 0 , 0);
-  greenLight.LightUp(255, 255, 0);
-  blueLight.LightUp(0, 0, 0);
-  delay(5000);
-
-  redLight.LightUp(0, 0 , 0);
+  redLight.LightUp(0, 0, 0);
+  yellowLight.LightUp(255, 255, 0);
   greenLight.LightUp(0, 0, 0);
-  blueLight.LightUp(0, 255, 0);
-  delay(5000);
+  delay(500);
+
+  redLight.LightUp(0, 0, 0);
+  yellowLight.LightUp(0, 0, 0);
+  greenLight.LightUp(0, 255, 0);
+  delay(1000);
 }
