@@ -1,31 +1,23 @@
 <?php
-$numbers = [1, 2, 3, 4, 5, 6];
-$students = [
+$number = 5;
+$students = ["Paul", "Sam", "Sifa", "Hertier", "Lagrange", "Newton"];
+$studentsDetails = [
     [
-        'name' => 'Bonheur',
-        'age' => 15,
-        'school' => 'Rusizi'
-    ],
-    [
-        'name' => 'Anna',
-        'age' => 10,
+        'name' => 'Paul',
+        'age' => 14,
         'school' => 'Nyamagabe'
     ],
     [
-        'name' => 'Paul',
-        'age' => 45,
-        'school' => 'Congo'
+        'name' => 'Sam',
+        'age' => 20,
+        'school' => 'Masisi'
+    ],
+    [
+        'name' => 'Hertier',
+        'age' => 10,
+        'school' => 'Goma'
     ],
 ];
-
-foreach ($students as $student) {
-    if ($student['name'] == 'Anna') {
-        echo 'This student is stuborn';
-    }
-    echo $student['name'];
-    echo $student['age'];
-    echo $student['school'];
-}
 ?>
 
 <!DOCTYPE html>
@@ -35,20 +27,26 @@ foreach ($students as $student) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L4 NIT Internship</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <h2>Arrays in PHP</h2>
-    <?php foreach ($students as $student) : ?>
-        <?php if ($student['name'] == 'Anna') : ?>
-            <p>This student is stuborn</p>
-        <?php endif ?>
-        <p>
-            The student name is <?php echo $student['name']; ?>, he is
-            <?php echo $student['age']; ?> and he studies in
-            <?php echo $student['school'] ?>
-        </p>
-        <?php endforeach ?>'
+    <h3>List of students</h3>
+    <ol class="list-group">
+        <?php foreach ($students as $student) : ?>
+            <li class="list-group-item"><?php echo $student; ?></li>
+        <?php endforeach; ?>
+    </ol>
+
+    <h2>List of students and their descriptions.</h2>
+        <?php foreach ($studentsDetails as $studentDetails) : ?>
+            <div class="card">
+                <p class="card-title">Student's name is <?php echo $studentDetails['name']; ?></p>
+                <p class="card-text">Student's age is <?php echo $studentDetails['age']; ?></p>
+                <p class="card-text">Student's school is <?php echo $studentDetails['school']; ?></p>
+            </div>
+        <?php endforeach; ?>
 </body>
 
 </html>
