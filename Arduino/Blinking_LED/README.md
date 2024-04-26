@@ -21,12 +21,3 @@ It focuses on the fundamental building block of interaction: blinking an LED.
     * Sets the LED pin to LOW, turning it off.
     * Repeats the on-off cycle continuously, creating a blinking effect.
 3. **Testing and Observation:** Once uploaded to the Arduino board, the program should make the LED blink repeatedly.
-
-**Learning Outcomes:**
-
-Through this project, we will gain a foundational understanding of:
-
-* Arduino hardware components and their functionalities.
-* Basic C/C++ syntax and control flow structures used in Arduino programming.
-* The concept of digital output and controlling LED brightness.
-* Implementing timing delays within the program using `delay()`.
