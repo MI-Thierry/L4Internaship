@@ -43,3 +43,6 @@ Object-oriented programming concepts are implemented through two main classes: T
 * Explore user interaction techniques with buttons in Arduino.
 * Implement I2C communication protocol for LCD displays.
 * Design custom classes for specific functionalities like Stopwatch or Timer.
+
+**Diagram**
+![](https://github.com/MI-Thierry/L4Internaship/blob/main/Arduino/LCD_Clock/LCD_Clock%20sketck.png)
