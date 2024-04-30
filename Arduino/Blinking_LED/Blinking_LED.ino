@@ -1,3 +1,4 @@
+// Declaring the LED pin.
 int LEDPin = 1;
 
 void setup() {
