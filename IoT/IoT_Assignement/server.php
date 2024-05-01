@@ -24,6 +24,7 @@ if ($db_conn->connect_error) {
     die();
 }
 
+// Creating a TCP Socket
 println("The app is starting.");
 $srv_sock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 if ($srv_sock === false) {
@@ -31,35 +32,40 @@ if ($srv_sock === false) {
     die();
 }
 
+// Binding the socket to its IP address and port
 if (socket_bind($srv_sock, $address, $port) === false) {
     print_error("socket_bind() failed: reason:");
     die();
 }
 
+// Listening for the clients
 if (socket_listen($srv_sock, 5) === false) {
     print_error("socket_listen() failed: reason:");
     die();
 }
 
+// Accepting the clients that are trying to connect to the server
 $msgsock = socket_accept($srv_sock);
 if ($msgsock === false) {
     print_error("socket_accept() failed: reason:");
     die();
 }
 
+//Data receiving loop
 println("Client is connected.");
 while (true) {
     $buf = socket_read($msgsock, 1024, PHP_NORMAL_READ);
     if ($buf !== false) {
+        // Deserializing data from client
         $info = json_decode($buf, true);
 
         $land_plot = $info['land_plot'];
         $temp = $info['temperature'];
         $hum = $info['humidity'];
 
+        // Inserting data to the database
         $sql = "INSERT INTO l4nit_measuring(id, land_plot, temperature, humidity, entry_date) VALUES
         (NULL, '$land_plot', '$temp', '$hum', current_timestamp())";
-
         if (mysqli_query($db_conn, $sql)) {
             println($buf);
         }
