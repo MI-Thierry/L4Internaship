@@ -32,3 +32,4 @@
 *.app
 /.vs
 /Firmware development/OsDev/build
+/C and C++ programming/C++ Basics/.vscode
