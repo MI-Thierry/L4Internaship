@@ -46,4 +46,4 @@ The Arduino code for this project can be divided into three main sections:
     * Displays the calculated distance on the LCD screen.
 
 **Diagram:**
-![](https://github.com/MI-Thierry/L4Internaship/blob/main/Arduino/Digital_Distance_Meter/Digital%20Distance%20meter%20sketch.png)
+![](https://github.com/MI-Thierry/L4Internaship/blob/main/Embedded%20system/Arduino/Digital_Distance_Meter/Digital%20Distance%20meter%20sketch.png)
