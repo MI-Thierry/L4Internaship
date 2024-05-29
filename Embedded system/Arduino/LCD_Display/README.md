@@ -33,4 +33,4 @@ Once you've successfully displayed "Hello World!", you can experiment with:
 * Utilizing different libraries that offer more advanced LCD control features.
 
 **Diagram**
-![](https://github.com/MI-Thierry/L4Internaship/blob/main/Arduino/LCD_Display/LCD%20Display.png)
+![](https://github.com/MI-Thierry/L4Internaship/blob/main/Embedded%20system/Arduino/LCD_Display/LCD%20Display.png)
