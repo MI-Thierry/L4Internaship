@@ -45,4 +45,4 @@ The Arduino code for this project involves these key sections:
     * Displays the formatted temperature data on the first line.
 
 **Diagram**
-![](https://github.com/MI-Thierry/L4Internaship/blob/main/Arduino/Digital_Thermometer/Digital%20Thermometer.png)
+![](https://github.com/MI-Thierry/L4Internaship/blob/main/Embedded%20system/Arduino/Digital_Thermometer/Digital%20Thermometer.png)
