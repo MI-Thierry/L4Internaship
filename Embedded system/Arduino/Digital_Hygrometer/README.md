@@ -44,4 +44,4 @@ The Arduino code for this project involves these key sections:
     * Displays the formatted humidity data on the first line.
 
 **Diagram**
-![](https://github.com/MI-Thierry/L4Internaship/blob/main/Arduino/Digital_Hygrometer/Digital%20Hygrometer.png)
+![](https://github.com/MI-Thierry/L4Internaship/blob/main/Embedded%20system/Arduino/Digital_Hygrometer/Digital%20Hygrometer.png)
