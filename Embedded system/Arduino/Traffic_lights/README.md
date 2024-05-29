@@ -31,4 +31,4 @@ The program cycles through the classic traffic light sequence (red, yellow, gree
 * Expand the project to include additional LEDs for pedestrian signals or turn arrows.
 
 **Diagram**
-![](https://github.com/MI-Thierry/L4Internaship/blob/main/Arduino/Traffic_lights/Traffic%20lights%20sketch.png)
+![](https://github.com/MI-Thierry/L4Internaship/blob/main/Embedded%20system/Arduino/Traffic_lights/Traffic%20lights%20sketch.png)
