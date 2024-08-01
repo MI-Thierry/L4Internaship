@@ -21,3 +21,6 @@ It focuses on the fundamental building block of interaction: blinking an LED.
     * Sets the LED pin to LOW, turning it off.
     * Repeats the on-off cycle continuously, creating a blinking effect.
 3. **Testing and Observation:** Once uploaded to the Arduino board, the program should make the LED blink repeatedly.
+
+**Diagram**
+![](https://github.com/MI-Thierry/L4Internaship/blob/main/Embedded%20system/Arduino/Blinking_LED/Blicking%20LED%20sketch.png)
